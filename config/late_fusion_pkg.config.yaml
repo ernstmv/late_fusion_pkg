@@ -1,0 +1,14 @@
+late_fusion_node:
+  ros__parameters:
+    image_detections_topic: "yolo/detections"
+    lidar_detections_topic: "lidar/detections"
+
+    matching_topic: "deepfusion/matching"
+    nonmatching_topic: "deepfusion/nonmatching"
+
+
+projection_node:
+  ros__parameters:
+    input_matching_topic: "deepfusion/matching"
+    input_nonmatching_topic: "deepfusion/nonmatching"
+    input_image_topic: "camera/image_raw"
